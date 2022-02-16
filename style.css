@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    color: gold;
+    font-family: "Electrolize";
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    padding: 2em;
+    background-color: #1B1B1B;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+form div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label,
+input {
+    display: block;
+}
+
+input {
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+}
+
+/* Muutetaan kalenterin ikonin väri valkoiseksi */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#buttons {
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+#add {
+    padding: 0.5em;
+}
+
+button {
+    font-family: "Electrolize";
+    background-color: black;
+    color: gold;
+    border: solid thin gold;
+    transition: 1s;
+    border-radius: 3px;
+    outline: none;
+}
+
+button:hover {
+    background-color: gold;
+    color: black;
+    transition: 1s;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: gold;
+    color: black;
+}
+
+td {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+table,
+th,
+td {
+    border: solid thin gold;
+}
+
+#noExp {
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+    form {
+        display: block;
+    }
+    
+    input {
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
